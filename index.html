@@ -31,10 +31,22 @@
 <div class="outer"><span>TechCrumb</span><span class="inner">Simplifying The Programmatic</span></div>
 
 <script>
-function fn() {
-	console.log("ji");
+var ANALYTICS_URL = "http://analytics.poolshool.com";
+var ed = "$$__ED__$$";
+function tc_capture() {
+	var img = new Image();
+        var srcURL = getWindowLocation();
+        img.src = ANALYTICS_URL + "/capture?event=clickevent&ed="+ed+"&srcURL="+srcURL;
 }
-document.body.addEventListener('click', fn, true); 
+
+function getWindowLocation() {
+        const location = window.location.href
+        if(location.indexOf("?") > 0) {
+            return location.substring(0, location.indexOf('?'));
+        }
+        return location;
+}
+document.body.addEventListener('click', tc_capture, true); 
 </script>
 </body>
 </html>
