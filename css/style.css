@@ -216,6 +216,7 @@ ul.about-list li {
 ul.about-list li span.tg {
     display: block;
     text-align: left;
+    text-transform: capitalize;
 }
 ul.about-list li .txt {
     display: block;
@@ -229,6 +230,7 @@ ul.about-list li .txt strong {
     float: left;
     width: 100%;
     padding: 60px;
+    background-color: #2A2A2A;
 }
 #career .career h2 {
     padding-left: 0;
@@ -238,7 +240,8 @@ ul.about-list li .txt strong {
     text-align: center;
     font-size: 26px;
     font-weight: 500;
-        text-transform: uppercase;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 ul.publish-list {
     float: left;
