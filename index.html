@@ -1,52 +1,312 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>
- TechCrumb | Simplifying The Programmatic | Coming Soon
-</title>
-<style>
- body {
-    background-color: #C80206;
- }
- .outer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 50vh;
-    width: 50vw;
-    left: 0;
-    right: 0;
-    color: #fff;
-    font-size: 9.75vw;
-    font-weight: bolder;
-}
-.inner {
-    display: inline-block;
-    float: right;
-    font-size: 3vw;
-}
-</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<title>Techcrumb</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
 </head>
 <body>
-<div class="outer"><span>TechCrumb</span><span class="inner">Simplifying The Programmatic</span></div>
+<header>
+	<div class="container">
+		<div class="logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+		</div>
+		<div class="hdr-right">
+			<a class="nav-btn">
+				menu
+			</a>
+			<ul class="navbar" id="navbar">
+				<li><a href="#banner">home</a></li>
+				<li><a href="#about">about us</a></li>
+				<li><a href="#publisher">publishers</a></li>
+				<li><a href="#career">careers</a></li>
+				<!-- <li><a href="#blog">blog</a></li> -->
+				<li><a href="#contact">contact us</a></li>
+			</ul>
 
-<script>
-var ANALYTICS_URL = "http://analytics.poolshool.com";
-var ed = "gknhm5JZ7kSZElVxteQMaIuSfY8v1bVq%2BgySKXexALU4LpmE0eSbEd6jhfDANvKv3EuJeebu9dVLeEWVwLm90N%2F8J%2BLuxmyt3m0gZxUVgXap1hHVwKUtBrOOzwNc5jmfNy1UeUOk0U6Z4v6F77JfmN%2F8J%2BLuxmyt3m0gZxUVgXafkP%2FpqT0LA4GyYe4Qn4Yky2K8WAccXuUvKHoJhaCQvg%3D%3D";
-function tc_capture() {
-	var img = new Image();
-        var srcURL = getWindowLocation();
-        img.src = ANALYTICS_URL + "/capture?event=clickevent&ed="+ed+"&srcURL="+srcURL;
-}
+		</div>
+	</div>
+</header>
+<!-- header end here -->
+<div class="banner" id="banner">
+	<div class="container">
+	<div class="banner-txt">
+		<h1>Responsible <br> Innovation - Together</h1>
+		<ul>
+			<li><i class="fa fa-check" aria-hidden="true"></i> Header Bidding</li>
+			<li><i class="fa fa-check" aria-hidden="true"></i> Yield Optimization</li>
+			<li><i class="fa fa-check" aria-hidden="true"></i> Programmatic Selling</li>
+			<li><i class="fa fa-check" aria-hidden="true"></i> Insights</li>
+		</ul>
+		<div class="getstrtd-btn"><a href="#publisher">Know More</a></div>
+	</div>
+	<div class="banner-img">
+		<img src="images/banner.png">
+	</div>	
+	</div>
+</div>
 
-function getWindowLocation() {
-        const location = window.location.href
-        if(location.indexOf("?") > 0) {
-            return location.substring(0, location.indexOf('?'));
-        }
-        return location;
-}
-document.body.addEventListener('click', tc_capture, true); 
+
+<div class="career about" id="about">
+	<div class="container">
+		<h2>About Us</h2>
+		<div class="txt"><ul class="about-list">
+			<li>
+				<span class="tg">We have :</span>
+				<div class="txt"> <strong>Passion</strong> + <strong>Wisdom</strong> + Strong <strong>Experience</strong> in AdTech</div></li>
+			<li>
+				<span class="tg">We feel :</span>
+				<div class="txt"> <strong>Responsible</strong> for a brighter future, together.</div></li>
+			<li>
+				<span class="tg">We do :</span>
+				<div class="txt"> <strong>Innovations</strong> to increase the publisher revenue (through different channels)</div></li>
+			<li>
+				<span class="tg">We use :</span>
+				<div class="txt"> Cutting Edge <strong>Technologies</strong></div></li>
+		</ul>
+</div>
+	</div>
+</div>
+
+<div class="publisher" id="publisher">
+	<div class="container">
+		<h2>Publishers</h2>
+
+		<ul class="publish-list">
+			<li class="left">
+				<div class="pblsh-img">
+					<img src="images/biding-h.png">
+				</div>
+				<div class="pblsh-cbox">
+				<h3>Header Bidding</h3>
+				<ul>
+					<li>Increase your revenue by receiving realtime bids for your inventory, from different demand partners.</li>
+					<li>Our framework uses Google DFP, but it's not limited to Google's ad-network only.</li>
+					
+					<li>Our platform offers a minimum latency through our highly performant servers. This helps in reaching out to more demand partners before determining the highest bid offered.</li>
+					<li>guarantees over 99% fill-rate (even in extreme cases).</li>
+				</ul>
+				</div>
+			</li>
+			<li class="right">
+			<div class="pblsh-cbox">
+				<h3>Insights</h3>
+				<ul>
+					<li class="dot-none">The realtime analytics is an integral part of our platform. We share our dashboard with you to see the realtime reports and insights to better understand:</li>
+					<li>how your property and the audience, are currently doing</li>
+					<li>Or, what could be a better deal, that you deserve.</li>
+				</ul>
+			</div>
+			<div class="pblsh-img">
+				<img src="images/biding.png">
+			</div>
+			</li>
+			<li class="left">
+			<div class="pblsh-img">
+				<img src="images/yeild.png">
+			</div>
+			<div class="pblsh-cbox">
+				<h3>Yield Optimization</h3>
+				<ul>
+					<li>Our SSP platform measures the publisher revenue against the various CPM (floor) prices offered to the demand partners. </li>
+					<li>Thereafter, it analyzes the data to offer a more optimized CPM value to increase the publisher ad revenue further.</li>
+				</ul>
+			</div>
+			</li>
+			<li class="right">
+				<div class="pblsh-cbox">
+				<h3>Programmatic Selling</h3>
+				<ul>
+					<li>We help you selling your inventory programmatically to get the higher bids, by reaching out to hundreds of demand partners, globally. </li>
+					<li>Not only this, also, you can manage your own direct-sale campaigns through our platform.</li>
+				</ul>
+			</div>
+			<div class="pblsh-img">
+				<img src="images/biding-last.png">
+			</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="career">
+<div class="dott">
+<div class="career">
+		<h2>Career with us</h2>
+		<div class="txt"><p>We are hiring for the following positions: <br>
+			Fullstack Software Engineer - Java/Web/MVC/SQL/JavaScript/HTML/CSS<br>
+Number of Open Positions: 2
+
+<br>If you are interested, please send your resume in PDF or Doc format, to 
+<a href="mailto:career@techcrumb.com" target="_blank">career@techcrumb.com</a></p>
+
+	</div>
+</div>
+</div>
+</div>
+<!-- <div class="container">
+	<div class="blog-cont" id="blog">
+		<h2>Blog</h2>
+		<div class="blog">
+			<div class="img">
+				<img src="images/blog.jpg">
+			</div>
+			<div class="b-dtail">
+				<h5>
+                    <span><i class="fa fa-clock-o"></i> 12 July, 2018 </span>
+                    <span><i class="fa fa-tag"></i> web design </span>
+                </h5>
+                <a href="#"><h2 class="t-title">When the work is all life</h2></a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+			</div>
+		</div>
+		<div class="blog">
+			<div class="img">
+				<img src="images/blog.jpg">
+			</div>
+			<div class="b-dtail">
+				<h5>
+                    <span><i class="fa fa-clock-o"></i> 12 July, 2018 </span>
+                    <span><i class="fa fa-tag"></i> web design </span>
+                </h5>
+                <a href="#"><h2 class="t-title">When the work is all life</h2></a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+			</div>
+		</div>
+		<div class="blog">
+			<div class="img">
+				<img src="images/blog.jpg">
+			</div>
+			<div class="b-dtail">
+				<h5>
+                    <span><i class="fa fa-clock-o"></i> 12 July, 2018 </span>
+                    <span><i class="fa fa-tag"></i> web design </span>
+                </h5>
+                <a href="#"><h2 class="t-title">When the work is all life</h2></a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+			</div>
+		</div>
+	</div>
+</div> -->
+<div id="contact">
+<div class="contact">
+	<div class="contct-info">
+		<h2>Contact Us</h2>
+		<div class="location"><i class="fa fa-map-marker"></i><span>B-4/246 - Basement, Safdarjung Enclave, New Delhi -110029</span></div>
+		<div class="location"><i class="fa fa-phone"></i><span>+91-11-46027229</span></div>
+		<div class="location"><i class="fa fa-envelope-o"></i>
+			<span><a href="mailto:career@techcrumb.com" target="_blank">contact@techcrumb.com</a></span></div>
+		
+		<form class="conct-form">
+			<div class="form-group"><input type="text" name="" placeholder="Your Name"></div>
+			<div class="form-group"><input type="text" name="" placeholder="Email Address"></div>
+			<div class="form-group"><input type="text" name="" placeholder="Phone no."></div>
+			<div class="form-group"><input type="text" name="" placeholder="Subject"></div>
+			<div class="form-group textarea"><textarea rows="4" placeholder="Your Message"></textarea></div>
+			<div class="form-group button"><button>SUBMIT</button></div>
+		</form>
+	</div>
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2303964031626!2d77.19630941508105!3d28.562843482445306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2776b5847c3%3A0xa28a341c74775c86!2sB4%2F246%2C+B4+Block%2C+Safdarjung+Enclave%2C+New+Delhi%2C+Delhi+110029!5e0!3m2!1sen!2sin!4v1505474879217" frameborder="0" style="border:0" ></iframe>
+	</div>
+</div>
+</div>
+<footer>
+	<div class="container">
+		<span class="cpyright">Copyright 2017, All rights reserved.</span>
+		<div class="social">
+			<a href="https://www.facebook.com/techcrumb.in" target="_blank" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/tech_crumb" target="_blank" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</footer>
+<a href="" class="scroll-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+    $(".nav-btn").click(function(){
+        $("ul.navbar").slideToggle();
+    });
+    $('.nav-btn').on('click', function (e) {
+    $('.nav-btn').toggleClass("active");
+});
+});
+$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scroll-top').fadeIn();
+		} else {
+			$('.scroll-top').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scroll-top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	var windowHeight = $(window).innerHeight();
+    $('#banner').css('min-height', windowHeight);
+	$('#about').css('min-height', windowHeight);
+	$('#career').css('min-height', windowHeight);
+	
+});
+
+
+
+// Cache selectors
+var lastId,
+    topMenu = $("#navbar"),
+    topMenuHeight = topMenu.outerHeight()+1,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 500);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href='#"+id+"']").parent().addClass("active");
+   }                   
+});
 </script>
 </body>
 </html>

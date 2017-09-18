@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>
+ TechCrumb | Simplifying The Programmatic | Coming Soon
+</title>
+<style>
+ body {
+    background-color: #C80206;
+ }
+ .outer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 9.75vw;
+    font-weight: bolder;
+}
+.inner {
+    display: inline-block;
+    float: right;
+    font-size: 3vw;
+}
+</style>
+</head>
+<body>
+<div class="outer"><span>TechCrumb</span><span class="inner">Simplifying The Programmatic</span></div>
+
+<script>
+var ANALYTICS_URL = "http://analytics.poolshool.com";
+var ed = "gknhm5JZ7kSZElVxteQMaIuSfY8v1bVq%2BgySKXexALU4LpmE0eSbEd6jhfDANvKv3EuJeebu9dVLeEWVwLm90N%2F8J%2BLuxmyt3m0gZxUVgXap1hHVwKUtBrOOzwNc5jmfNy1UeUOk0U6Z4v6F77JfmN%2F8J%2BLuxmyt3m0gZxUVgXafkP%2FpqT0LA4GyYe4Qn4Yky2K8WAccXuUvKHoJhaCQvg%3D%3D";
+function tc_capture() {
+	var img = new Image();
+        var srcURL = getWindowLocation();
+        img.src = ANALYTICS_URL + "/capture?event=clickevent&ed="+ed+"&srcURL="+srcURL;
+}
+
+function getWindowLocation() {
+        const location = window.location.href
+        if(location.indexOf("?") > 0) {
+            return location.substring(0, location.indexOf('?'));
+        }
+        return location;
+}
+document.body.addEventListener('click', tc_capture, true); 
+</script>
+</body>
+</html>
