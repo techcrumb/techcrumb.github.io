@@ -696,7 +696,7 @@ ul.publish-list li.right .pblsh-img {
 
 
 @media (max-width: 1024px){
-.banner-txt h1 {font-size: 38px;text-align: center;}
+.banner-txt h1 {font-size: 38px;text-align: center;padding:0;}
 .career h2{padding:0;text-align: center;width: 100%;}
 .contct-info {
     padding: 20px;
@@ -776,12 +776,14 @@ ul.navbar{display: none;}
     background-color: #fff;
     box-shadow: 0 7px 10px rgba(0,0,0,.1);
 }
+.social{float:left;padding-left:40px;padding-right:0;}
 .navbar li {
     width: 100%;
     border-bottom: solid 1px #e7e7e7;
 }
+.career .txt p{word-break: break-all;}
 ul.navbar li a{line-height: 45px;}
-
+	ul.publish-list li .pblsh-cbox{padding:0 !important;}
 .banner-txt h1{line-height: 56px;}
 .banner-txt ul{margin-top: 20px;padding-left: 0;}
 .location span {
