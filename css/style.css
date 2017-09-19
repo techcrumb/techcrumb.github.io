@@ -262,9 +262,11 @@ ul.publish-list li {
     vertical-align: top;
     text-align: center;
     padding:20px 0;
+margin-bottom: 50px;
     transition: all .2s ease-in-out;
     margin-bottom: 20px;
 }
+ul.publish-list li h3{    color: #1b1b1b;}
 ul.publish-list li ul li.dot-none {
     padding-left: 0;
 }
