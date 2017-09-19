@@ -781,6 +781,8 @@ ul.navbar{display: none;}
 	#career .career .txt p u {
     color: #ed9625;
 }
+	#career .career{    width: 100%;
+    padding: 20px 30px;}
 ul.about-list li span.tg{font-size: 30px;}
 .career.about .txt {
     width: 100%;
