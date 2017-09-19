@@ -565,6 +565,7 @@ footer {
 }
 .social {
     float: right;
+	padding-right:40px;
 }
 .social a {
     display: block;
