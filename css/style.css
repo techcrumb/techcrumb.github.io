@@ -778,6 +778,9 @@ ul.navbar{display: none;}
     background-color: #fff;
     box-shadow: 0 7px 10px rgba(0,0,0,.1);
 }
+	#career .career .txt p u {
+    color: #ed9625;
+}
 ul.about-list li span.tg{font-size: 30px;}
 .career.about .txt {
     width: 100%;
