@@ -266,7 +266,7 @@ margin-bottom: 50px;
     transition: all .2s ease-in-out;
     margin-bottom: 20px;
 }
-ul.publish-list li h3{    color: #1b1b1b;}
+
 ul.publish-list li ul li.dot-none {
     padding-left: 0;
 }
@@ -315,7 +315,7 @@ ul.publish-list li h3 {
     margin-bottom: 20px;
     border-bottom: solid 1px #bdbdbd;
     padding-bottom: 10px;
-    color: #ffffff;
+    color: #1b1b1b;
     font-size: 28px;
     text-align: left;
 }
