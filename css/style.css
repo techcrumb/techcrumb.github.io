@@ -188,7 +188,7 @@ ul.navbar li a:hover {color: #ed941f}
     float: left;
     width: 100%;
     background-color: #f7f7f7;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     height: 500px;
 }
 .about-content {
@@ -207,7 +207,7 @@ ul.navbar li a:hover {color: #ed941f}
 ul.about-list {
     float: left;
     width: 100%;
-    margin-bottom: 30px;
+    margin-top: 50px;
 }
 ul.about-list li {
     font-size: 20px;
@@ -397,7 +397,7 @@ a.scroll-top {
     padding-top: 80px;
     padding-bottom: 30px;
 }
-#about {float: left; width: 100%;}
+#about {float: left; width: 100%;padding-top: 70px;}
 #career{
     float: left;
     width: 100%;    
@@ -644,14 +644,121 @@ footer {
 
 
 
-@media (max-width: 1024px){
-.banner-txt h1 {font-size: 38px;}
-.career h2{padding-left: 50px;}
-.contct-info{padding: 40px 0; padding-left: 40px;}
 
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+ul.publish-list li .pblsh-img {
+    display: none;
+} 
+ul.publish-list li{padding: 0;}
+ul.publish-list li.left .pblsh-cbox {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    float: none;
+    position: static;
+    top: inherit;
+    transform: inherit;
+    overflow: hidden;
+    padding: 20px;
+}
+ul.publish-list li.right .pblsh-cbox {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    float: none;
+    position: static;
+    top: inherit;
+    transform: inherit;
+    overflow: hidden;
+    padding: 20px;
+}
+ul.publish-list li:hover {background-color: inherit; }
+ul.publish-list li.right .pblsh-img {
+    float: none;
+    width: 30%;
 }
 
-/*--[max width 1024px]--*/
+
+
+
+
+
+}/*--[max width 1200px]--*/
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+.banner-txt h1 {font-size: 38px;text-align: center;}
+.career h2{padding:0;text-align: center;width: 100%;}
+.contct-info {
+    padding: 20px;
+    float: left;
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding-top: 40px;
+}
+.location{color: #fff;}
+.map {
+    float: left;
+    width: 100%;
+    position: static;
+    padding: 20px;
+}
+.banner-txt{width: 100%;}
+.banner-txt ul li{display: inline-block;margin: 10px 20px;}
+.banner-txt ul li i.fa{margin-right: 0;}
+.banner-txt ul{text-align: center;}
+.getstrtd-btn{text-align: center;}
+.banner:after{background-color: rgba(0,0,0,0.6);}
+.career.about h2:after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 3px;
+    background-color: #ed941f;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.career.about .txt {
+    width: 100%;
+}
+ul.about-list {
+    float: none;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    overflow: hidden;
+}
+ul.about-list li{margin-top: 20px;}
+#career{position: relative;}
+#career .career{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(9, 9, 9,.8);
+    margin: 0;
+    max-width: inherit;
+    width: 80%;
+    padding: 40px 50px;
+}
+
+}/*--[max width 1024px]--*/
 
 
 
@@ -679,17 +786,17 @@ ul.navbar{display: none;}
     border-bottom: solid 1px #e7e7e7;
 }
 ul.navbar li a{line-height: 45px;}
-.banner-txt{width: 60%;}
-.banner-img{width: 40%;}
-.career h2 {
-    width: 100%;
-    padding-left: 0;
-    margin-bottom: 20px;
-    text-align: left;
-}
+
+.banner-txt h1{line-height: 56px;}
+.banner-txt ul{margin-top: 20px;padding-left: 0;}
 .location span {
     font-size: 15px;
 }
+.getstrtd-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+.publisher{padding: 40px 15px;}
 .career .txt {width: 100%; }
 ul.publish-list li {display: inline-block; width: 100%;}
 .blog {
@@ -715,6 +822,13 @@ ul.publish-list li {display: inline-block; width: 100%;}
     right: 0;
     padding-left: 0;
 }
+.banner-txt ul li{width: 100%;padding: 10px 20px; margin-bottom: 0;}
+ul.about-list{width: 100%;padding: 0 10px;}
+ul.publish-list li ul li{color: #fff;}
+
+
+
+
 
 }/*--[max width 768px]--*/
 
@@ -725,7 +839,7 @@ ul.publish-list li {display: inline-block; width: 100%;}
 .banner-txt {
     width: 100%;
     padding-left: 0;
-    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .career{padding: 60px 30px;}
 .banner-img{display: none;}
@@ -738,21 +852,4 @@ ul.publish-list{margin-top: 0;}
 
 
 }/*--[max width 768px]--*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
