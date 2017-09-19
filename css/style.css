@@ -790,7 +790,7 @@ ul.navbar li a{line-height: 45px;}
     font-size: 15px;
 }
 .getstrtd-btn {
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
 }
 .publisher{padding: 40px 15px;}
@@ -819,7 +819,7 @@ ul.publish-list li {display: inline-block; width: 100%;}
     right: 0;
     padding-left: 0;
 }
-.banner-txt ul li{width: 100%;padding: 10px 20px; margin-bottom: 0;}
+.banner-txt ul li{width: 100%;padding: 10px 20px; margin-bottom: 0;text-align:left;}
 ul.about-list{width: 100%;padding: 0 10px;}
 ul.publish-list li ul li{color: #fff;}
 
