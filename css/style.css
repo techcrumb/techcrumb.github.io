@@ -85,6 +85,9 @@ ul.navbar li a:hover {color: #ed941f}
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+#career .career .txt p u {
+    color: #ed9625;
+}
 .banner:after {
     position: absolute;
     content: '';
@@ -830,7 +833,6 @@ ul.publish-list li {display: inline-block; width: 100%;}
     height: 300px;
     position: static;
     right: 0;
-    padding-left: 0;
 }
 .banner-txt ul li{width: 100%;padding: 10px 20px; margin-bottom: 0;text-align:left;}
 ul.about-list{width: 100%;padding: 0 10px;}
