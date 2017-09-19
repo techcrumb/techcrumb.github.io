@@ -85,7 +85,7 @@ ul.navbar li a:hover {color: #ed941f}
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#career .career .txt p u {
+#career .career .txt p span strong {
     color: #ed9625;
 }
 .banner:after {
