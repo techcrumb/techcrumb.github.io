@@ -272,7 +272,12 @@ $(document).ready(function(){
 // Cache selectors
 
 
-minwidth(800, function () {
+
+
+
+if (window.matchMedia('(max-width: 768px)').matches)
+{
+   
 var lastId,
     topMenu = $("#navbar"),
     topMenuHeight = topMenu.outerHeight()+1,
@@ -316,10 +321,7 @@ $(window).scroll(function(){
    }                   
 });
 
-
-
-
-});
+}
 
 </script>
 	
