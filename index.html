@@ -275,10 +275,15 @@ $(document).ready(function(){
 
 
 
-if (window.matchMedia('(max-width: 768px)').matches)
-{
-   
-var lastId,
+
+
+$(window).resize(function(){
+
+       if ($(window).width() <= 800) {  
+
+              // is mobile device
+
+              var lastId,
     topMenu = $("#navbar"),
     topMenuHeight = topMenu.outerHeight()+1,
     // All list items
@@ -321,7 +326,9 @@ $(window).scroll(function(){
    }                   
 });
 
-}
+       }     
+
+});
 
 </script>
 	
