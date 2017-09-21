@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -238,7 +239,6 @@
 <a href="" class="scroll-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
-
 	$(document).ready(function(){
     $(".nav-btn").click(function(){
         $("ul.navbar").slideToggle();
@@ -269,10 +269,10 @@ $(document).ready(function(){
 	$('#career').css('min-height', windowHeight);
 	
 });
-
-
-
 // Cache selectors
+
+
+minwidth(800, function () {
 var lastId,
     topMenu = $("#navbar"),
     topMenuHeight = topMenu.outerHeight()+1,
@@ -283,7 +283,6 @@ var lastId,
       var item = $($(this).attr("href"));
       if (item.length) { return item; }
     });
-
 // Bind click handler to menu items
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
@@ -294,7 +293,6 @@ menuItems.click(function(e){
   }, 500);
   e.preventDefault();
 });
-
 // Bind to scroll
 $(window).scroll(function(){
    // Get container scroll position
@@ -317,6 +315,12 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+
+
+
+
+});
+
 </script>
 	
 	<!-- Start of HubSpot Embed Code -->
