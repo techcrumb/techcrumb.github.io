@@ -606,6 +606,8 @@ footer {
 .social a.fb:after{background-color: #3b5998;}
 .social a.tw:after{background-color: #0084b4;}
 .social a.li:after{background-color: #1977B3;}
+.social a.gp:after{background-color: #D93F38;}
+
 .nav-btn{
 	display: none;
 	position: fixed;
