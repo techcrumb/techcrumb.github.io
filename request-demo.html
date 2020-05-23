@@ -18,6 +18,7 @@
   <link href="images/favicon-192x1922x_1.png" rel="shortcut icon" type="image/x-icon">
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
   <script src="https://instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body class="body">
   <div data-collapse="medium" data-animation="over-left" data-duration="400" data-doc-height="1" class="navbar w-nav"><a href="index.html" class="brand w-nav-brand"><img src="images/techcrumb-logo.png" alt="techcrumb_logo" width="230"></a>
@@ -70,12 +71,25 @@
       </div>
       <div class="form-container">
         <div class="form-block w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSf0KcZ07qm_1G8CDrHjSS9X1JOFkVHAd_tM26J-aegCq7vFsA/formResponse" class="form">
+          <form id="email-form" name="email-form" onsubmit="return submitForm();" data-name="Email Form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSf0KcZ07qm_1G8CDrHjSS9X1JOFkVHAd_tM26J-aegCq7vFsA/formResponse" class="form">
             <div id="w-node-0b2c06a50c0e-41a9d911"><label for="entry.-6" class="field-label">First Name*</label><input type="text" class="text-field w-input" maxlength="256" name="entry.2005620554" data-name="entry.2005620554" placeholder="Kunal" id="entry.-6" required=""></div>
             <div id="w-node-3e2815a21121-41a9d911"><label for="entry.-7" class="field-label">Last Name*</label><input type="text" class="text-field w-input" maxlength="256" name="entry.154654705" data-name="entry.154654705" placeholder="Montana" id="entry.-7"></div>
             <div id="w-node-10f336450566-41a9d911"><label for="entry.-8" class="field-label">Email Address*</label><input type="email" class="text-field w-input" maxlength="256" name="entry.1045781291" data-name="entry.1045781291" placeholder="montana@gmail.com" id="entry.-8" required=""></div>
             <div id="w-node-fe6dc0791c3f-41a9d911"><label for="entry.-9" class="field-label">Phone Number*</label><input type="tel" class="text-field w-input" maxlength="256" name="entry.1166974658" data-name="entry.1166974658" placeholder="(+91) 98101 98101" id="entry.-9"></div>
-            <div id="w-node-2db0d089c8d6-41a9d911"><label for="entry.-10" class="field-label">Please tell us more about what you’re working on</label><textarea id="entry.-10" name="entry.839337160" maxlength="5000" placeholder="What does the product do, who is it for, and how can we help to make it even more awesome" data-name="entry.839337160" class="text-field size-big w-input"></textarea></div><input type="submit" value="Submit" data-wait="Please wait..." id="w-node-82238b67450c-41a9d911" class="submit-button w-button"></form>
+            <div id="w-node-2db0d089c8d6-41a9d911">
+              <label for="entry.-10" class="field-label">Please tell us more about what you’re working on</label>
+              <textarea id="entry.-10" name="entry.839337160" maxlength="5000" placeholder="What does the product do, who is it for, and how can we help to make it even more awesome" data-name="entry.839337160" class="text-field size-big w-input"></textarea>
+            </div>
+            <div style="text-align: center;">
+              <div class="g-recaptcha" data-sitekey="6Le_a_sUAAAAAKX74D4H1BdBvnBbOKBNrfvLFDz4" data-callback="verifyCaptcha"></div>
+              <div id="g-recaptcha-error"></div>
+            </div>
+            <br/>
+            <div>
+              <input type="submit" value="Submit" data-wait="Please wait..." id="w-node-82238b67450c-41a9d911" class="submit-button w-button">
+            </div>
+          </form>
+
           <div class="success-message w-form-done">
             <div class="text-block-2">Thank you!<br>Your submission has been received!</div>
           </div>
@@ -117,6 +131,21 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-108810907-1');
+  </script>
+  <script>
+      function submitForm() {
+          var response = grecaptcha.getResponse();
+          if(response.length == 0) {
+              document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+              return false;
+          }
+          return true;
+      }
+
+      function verifyCaptcha() {
+          document.getElementById('g-recaptcha-error').innerHTML = '';
+      }
+
   </script>
 </body>
 </html>
